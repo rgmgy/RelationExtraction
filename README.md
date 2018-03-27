@@ -14,8 +14,8 @@
 * /data 存放转换后的训练数据，最终训练用到的是/Healthtrain_word.npy,/Healthtrain_pos1.npy,/data/Healthtrain_pos2.npy,/Healthtrain_y.npy
 * /model 存放训练好的模型
 * /origin_data 存放原始的训练数据，
-** 其中/RETrainData.txt 为我最开始从医学文本里面提取的样本。对应样本关系放在/relation2id.txt文件
-** /RETrainDataFinal 和 /RETrainDatanew为尝试提取因果关系的样本集，它们的样本关系具有的种类详见/relationRETrainDataFinal 和/relationRETrainDatanew
+  * /RETrainData.txt 为我最开始从医学文本里面提取的样本。对应样本关系放在/relation2id.txt文件
+  * /RETrainDataFinal 和 /RETrainDatanew为尝试提取因果关系的样本集，它们的样本关系具有的种类详见/relationRETrainDataFinal 和/relationRETrainDatanew
 * /initial.py 转换原始的训练数据到需要的格式
 * /changesample.py 转换原始训练集的关系种类，将实体反向，扩充样本集
 * /network.py 网络结构定义 ，参数设置
@@ -51,7 +51,8 @@
 ```
 
 
-### Test，记得在test_GRU.py 里面修改用到的模型地址
+### Test
+记得在test_GRU.py 里面修改用到的模型地址
 
 ```
 #python3 test_GRU.py
